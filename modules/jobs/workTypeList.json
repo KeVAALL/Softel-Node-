@@ -1,0 +1,33 @@
+{
+  "succuss": true,
+  "message": "Record(s) found",
+  "data": [
+    {
+      "categoryId": 2,
+      "categoryName": "Inverter",
+      "JobWorkTypes": [
+        {
+          "id": 24,
+          "equipmentCategoryId": 2,
+          "workTypeName": "Inverter failure"
+        },
+        {
+          "id": 27,
+          "equipmentCategoryId": 2,
+          "workTypeName": "Job Work Type"
+        }
+      ]
+    },
+    {
+      "categoryId": 3,
+      "categoryName": "MFM",
+      "JobWorkTypes": [
+        {
+          "id": 25,
+          "equipmentCategoryId": 3,
+          "workTypeName": "IGBT Failure"
+        }
+      ]
+    }
+  ]
+}

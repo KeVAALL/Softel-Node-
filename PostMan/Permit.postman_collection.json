@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "a042c165-9fae-441a-873f-adb5a5555951",
+		"name": "Permit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6899770"
+	},
+	"item": [
+		{
+			"name": "permitCreate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ptwblockId\":47,\r\n    \"ptwtypeId\":65,\r\n    \"ptwcode\":\"PTW65\",\r\n    \"ptwHWId\":2,\r\n    \"ptwstartDate\":\"2022-07-15 10:55:16\",\r\n    \"ptwendDate\":\"2022-07-15 19:45:16\",\r\n    \"ptwtitle\":\"description test the permit to civil work\",\r\n    \"ptwdescription\":\"description test the permit to civil work\",\r\n    \"ptwfacilityId\":46,\r\n    \"ptwempId\":412,\r\n    \"ptwstatus\":9,\r\n    \"block_id\":47,\r\n    \"assetId\":2,\r\n    \"createdByAssetlist\":2466,\r\n    \"updatedByAssetlist\":2466,\r\n    \"assetCategoryId\":2,\r\n    \"createdByIsolatedAsset\":2466,\r\n    \"updatedByIsolatedAsset\":2466,\r\n    \"normalisedStatus\":0,\r\n    \"normalised_date\":\"2022-07-12 10:45\",\r\n    \"Loto_Asset_id\":24011,\r\n    \"Loto_Key\":\"1153serial\",\r\n    \"lotoRemovedStatus\":0,\r\n    \"lotoRemovedDate\":\"\",\r\n    \"employeeId\":\"145\",\r\n    \"createdByEmployee\":2466,\r\n    \"updatedByEmployee\":2466,\r\n    \"empStatus\":1,\r\n    \"responsibility\":\"see responsibility\",\r\n    \"isCustomEmployee\":0,\r\n    \"safetyMeasureValue\":\"on\",\r\n    \"safetyMeasureId\":284,\r\n    \"ptwIsolation\":1,\r\n    \"ptwlockSrNo\":\"SCDA3_Zone_1.1_INV_1\",\r\n    \"ptwtagSrNo\":\"12345lockserial11\",\r\n    \"ptwLOTOStatus\":1,\r\n    \"safetyTitle\":\"Safety Helmet and Safety Shoes\",\r\n    \"safetyDiscription\":\"Safety Helmet and Safety Shoes Required for all Types of work in The Site\",\r\n    \"safetyInput\":1,\r\n    \"safetyRequired\":1,\r\n    \"createdBySM\":2466,\r\n    \"updatedBySM\":2466\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/Permit/PermitCreate",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"Permit",
+						"PermitCreate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "permitTypeList",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"facilityId\":46,\r\n    \"status\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/Permit/PermitTypeList/46",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"Permit",
+						"PermitTypeList",
+						"46"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "permitBlocks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "safetyListQuestion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "safetyListMeasure",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lotoAssets",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Ptw_Id\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/Permit/LOTOAssets/3",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"Permit",
+						"LOTOAssets",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "isolatedAssetCategories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employeeLists",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employeeId\":50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/Permit/EmployeeLists/50",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"Permit",
+						"EmployeeLists",
+						"50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assetLists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+  "id": 3133,
+  "facilityId": 45,
+  "blockId": 30,
+  "assignedId": 0,
+  "title": "Creating new job",
+  "description": "This is my first job creation using rest api",
+  "linkedPermit": 0,
+  "status": false,
+  "breakdownTime": "2022-04-21T04:30:00.000Z",
+  "belongsTo": 0,
+  "cancellationRemarks": "Job Deleted!",
+  "cancelStatus": "N",
+  "createdAt": "2022-10-03T08:54:44.000Z",
+  "createdBy": "",
+  "updatedAt": "2022-10-03T09:16:05.999Z",
+  "updatedBy": "prashant@softeltech.in"
+}

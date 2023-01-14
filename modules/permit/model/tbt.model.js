@@ -1,0 +1,43 @@
+export default (connection, DataTypes) => {
+  return connection.define(
+    "tbt",
+    {
+      tbtId: DataTypes.INTEGER,
+      tbtCode: DataTypes.STRING,
+      tbtTitle: DataTypes.STRING,
+      tbtDescription: DataTypes.TEXT,
+      tbtJobTypeId: DataTypes.INTEGER,
+      tbtJobTypeName: DataTypes.STRING,
+      tbtJobTypeCode: DataTypes.STRING,
+      tbtSopId: DataTypes.INTEGER,
+      tbtSopName: DataTypes.STRING,
+      tbtSopCode: DataTypes.STRING,
+      tbtJsaId: DataTypes.INTEGER,
+      tbtJsaName: DataTypes.STRING,
+      tbtJsaCode: DataTypes.STRING,
+      tbtHseId: DataTypes.INTEGER,
+      tbtHseName: DataTypes.STRING,
+      tbtHseCode: DataTypes.STRING,
+      tbtProceduresAvailability: DataTypes.INTEGER,
+      tbtProceduresDiscussion: DataTypes.INTEGER,
+      tbtChecklistAvailability: DataTypes.INTEGER,
+      tbtChecklistDiscussion: DataTypes.INTEGER,
+      tbtToolBagCondition: DataTypes.INTEGER,
+      tbtAddedDate: DataTypes.DATE,
+      tbtAddedBy: DataTypes.INTEGER,
+      tbtUpdatedDate: DataTypes.DATE,
+      tbtUpdatedBy: DataTypes.INTEGER,
+      status: DataTypes.STRING,
+      ptwCode: DataTypes.STRING,
+      ptwId: DataTypes.INTEGER,
+      facilityId: DataTypes.INTEGER,
+      facilityName: DataTypes.STRING,
+      facilityCode: DataTypes.STRING,
+      tbtRiskAssessmentName: DataTypes.STRING,
+      tbtRiskMitigationPlan: DataTypes.STRING,
+    },
+    {
+      timestamps: false,
+    }
+  );
+};
